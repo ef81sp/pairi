@@ -1,0 +1,2011 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`flatTree 1`] = `
+[
+  {
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "ブロック": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "ブロック": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "ブロック": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "ブロック": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+]
+`;
+
+exports[`塔子抽出 1`] = `
+[
+  {
+    "children": [
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 7,
+              "str牌": "7m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [],
+        },
+        "ブロック": null,
+      },
+    ],
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [],
+    },
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+      "type": "塔子",
+    },
+  },
+]
+`;
+
+exports[`面子抽出 1`] = `
+[
+  {
+    "children": [
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 7,
+              "str牌": "7m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+          ],
+        },
+        "ブロック": {
+          "component": [
+            牌 {
+              "is赤牌": false,
+              "number": 4,
+              "str牌": "4m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 5,
+              "str牌": "5m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6m",
+              "suit": "m",
+            },
+          ],
+          "type": "面子",
+        },
+      },
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 4,
+              "str牌": "4m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+          ],
+        },
+        "ブロック": {
+          "component": [
+            牌 {
+              "is赤牌": false,
+              "number": 5,
+              "str牌": "5m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 7,
+              "str牌": "7m",
+              "suit": "m",
+            },
+          ],
+          "type": "面子",
+        },
+      },
+    ],
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3m",
+          "suit": "m",
+        },
+      ],
+      "type": "面子",
+    },
+  },
+  {
+    "children": [
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 7,
+              "str牌": "7m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+          ],
+        },
+        "ブロック": {
+          "component": [
+            牌 {
+              "is赤牌": false,
+              "number": 4,
+              "str牌": "4m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 5,
+              "str牌": "5m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6m",
+              "suit": "m",
+            },
+          ],
+          "type": "面子",
+        },
+      },
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 4,
+              "str牌": "4m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+          ],
+        },
+        "ブロック": {
+          "component": [
+            牌 {
+              "is赤牌": false,
+              "number": 5,
+              "str牌": "5m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 7,
+              "str牌": "7m",
+              "suit": "m",
+            },
+          ],
+          "type": "面子",
+        },
+      },
+    ],
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3m",
+          "suit": "m",
+        },
+      ],
+      "type": "面子",
+    },
+  },
+  {
+    "children": [
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+          ],
+        },
+        "ブロック": {
+          "component": [
+            牌 {
+              "is赤牌": false,
+              "number": 5,
+              "str牌": "5m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 7,
+              "str牌": "7m",
+              "suit": "m",
+            },
+          ],
+          "type": "面子",
+        },
+      },
+    ],
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4m",
+          "suit": "m",
+        },
+      ],
+      "type": "面子",
+    },
+  },
+  {
+    "children": [],
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5m",
+          "suit": "m",
+        },
+      ],
+      "type": "面子",
+    },
+  },
+  {
+    "children": [
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 7,
+              "str牌": "7m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+          ],
+        },
+        "ブロック": {
+          "component": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 2,
+              "str牌": "2m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3m",
+              "suit": "m",
+            },
+          ],
+          "type": "面子",
+        },
+      },
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 7,
+              "str牌": "7m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+          ],
+        },
+        "ブロック": {
+          "component": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 2,
+              "str牌": "2m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3m",
+              "suit": "m",
+            },
+          ],
+          "type": "面子",
+        },
+      },
+    ],
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6m",
+          "suit": "m",
+        },
+      ],
+      "type": "面子",
+    },
+  },
+  {
+    "children": [
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 4,
+              "str牌": "4m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+          ],
+        },
+        "ブロック": {
+          "component": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 2,
+              "str牌": "2m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3m",
+              "suit": "m",
+            },
+          ],
+          "type": "面子",
+        },
+      },
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 4,
+              "str牌": "4m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+          ],
+        },
+        "ブロック": {
+          "component": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 2,
+              "str牌": "2m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3m",
+              "suit": "m",
+            },
+          ],
+          "type": "面子",
+        },
+      },
+      {
+        "children": [],
+        "rest": {
+          "m": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1m",
+              "suit": "m",
+            },
+          ],
+          "p": [
+            牌 {
+              "is赤牌": false,
+              "number": 6,
+              "str牌": "6p",
+              "suit": "p",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 9,
+              "str牌": "9p",
+              "suit": "p",
+            },
+          ],
+          "s": [
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3s",
+              "suit": "s",
+            },
+          ],
+          "z": [
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 1,
+              "str牌": "1z",
+              "suit": "z",
+            },
+          ],
+        },
+        "ブロック": {
+          "component": [
+            牌 {
+              "is赤牌": false,
+              "number": 2,
+              "str牌": "2m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 3,
+              "str牌": "3m",
+              "suit": "m",
+            },
+            牌 {
+              "is赤牌": false,
+              "number": 4,
+              "str牌": "4m",
+              "suit": "m",
+            },
+          ],
+          "type": "面子",
+        },
+      },
+    ],
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "type": "面子",
+    },
+  },
+]
+`;
+
+exports[`面子抽出2 1`] = `
+[
+  {
+    "children": [],
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 8,
+          "str牌": "8m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+      ],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "type": "面子",
+    },
+  },
+  {
+    "children": [],
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+      ],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 8,
+          "str牌": "8m",
+          "suit": "m",
+        },
+      ],
+      "type": "面子",
+    },
+  },
+  {
+    "children": [],
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6m",
+          "suit": "m",
+        },
+      ],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 8,
+          "str牌": "8m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+      ],
+      "type": "面子",
+    },
+  },
+]
+`;

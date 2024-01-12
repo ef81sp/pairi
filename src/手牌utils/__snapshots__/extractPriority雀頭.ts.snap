@@ -1,0 +1,293 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`雀頭抽出 1`] = `
+[
+  {
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "status": "success",
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+  },
+  {
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+    },
+    "status": "success",
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+      ],
+      "type": "雀頭",
+    },
+  },
+  {
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3m",
+          "suit": "m",
+        },
+      ],
+      "p": [
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 6,
+          "str牌": "6p",
+          "suit": "p",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9p",
+          "suit": "p",
+        },
+      ],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 3,
+          "str牌": "3s",
+          "suit": "s",
+        },
+      ],
+      "z": [],
+    },
+    "status": "success",
+    "ブロック": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+      "type": "雀頭",
+    },
+  },
+]
+`;

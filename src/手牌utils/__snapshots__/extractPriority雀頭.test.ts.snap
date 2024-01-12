@@ -1,0 +1,1735 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`清一色 1`] = `
+[
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 8,
+            "str牌": "8m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 8,
+            "str牌": "8m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 8,
+            "str牌": "8m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 8,
+            "str牌": "8m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 8,
+            "str牌": "8m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 8,
+            "str牌": "8m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 8,
+            "str牌": "8m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 9,
+          "str牌": "9m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 8,
+            "str牌": "8m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 9,
+            "str牌": "9m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+]
+`;
+
+exports[`通常 - 一向聴 1`] = `
+[
+  {
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 7,
+          "str牌": "7m",
+          "suit": "m",
+        },
+      ],
+      "p": [],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5s",
+          "suit": "s",
+        },
+      ],
+      "z": [],
+    },
+    "塔子": [],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6p",
+            "suit": "p",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 4,
+          "str牌": "4m",
+          "suit": "m",
+        },
+      ],
+      "p": [],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5s",
+          "suit": "s",
+        },
+      ],
+      "z": [],
+    },
+    "塔子": [],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6p",
+            "suit": "p",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1m",
+          "suit": "m",
+        },
+      ],
+      "p": [],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5s",
+          "suit": "s",
+        },
+      ],
+      "z": [],
+    },
+    "塔子": [],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6p",
+            "suit": "p",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [
+        牌 {
+          "is赤牌": false,
+          "number": 5,
+          "str牌": "5s",
+          "suit": "s",
+        },
+      ],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6p",
+            "suit": "p",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+]
+`;
+
+exports[`通常 - 聴牌 - 多面 1`] = `
+[
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6p",
+            "suit": "p",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5s",
+            "suit": "s",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6s",
+            "suit": "s",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7s",
+            "suit": "s",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 2,
+          "str牌": "2m",
+          "suit": "m",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6p",
+            "suit": "p",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5s",
+            "suit": "s",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6s",
+            "suit": "s",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 7,
+            "str牌": "7s",
+            "suit": "s",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+]
+`;
+
+exports[`通常 - 聴牌 1`] = `
+[
+  {
+    "rest": {
+      "m": [],
+      "p": [],
+      "s": [],
+      "z": [],
+    },
+    "塔子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5s",
+            "suit": "s",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6s",
+            "suit": "s",
+          },
+        ],
+        "type": "塔子",
+      },
+    ],
+    "雀頭": {
+      "component": [
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+        牌 {
+          "is赤牌": false,
+          "number": 1,
+          "str牌": "1z",
+          "suit": "z",
+        },
+      ],
+      "type": "雀頭",
+    },
+    "面子": [
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 1,
+            "str牌": "1m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 2,
+            "str牌": "2m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 3,
+            "str牌": "3m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4m",
+            "suit": "m",
+          },
+        ],
+        "type": "面子",
+      },
+      {
+        "component": [
+          牌 {
+            "is赤牌": false,
+            "number": 4,
+            "str牌": "4p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 5,
+            "str牌": "5p",
+            "suit": "p",
+          },
+          牌 {
+            "is赤牌": false,
+            "number": 6,
+            "str牌": "6p",
+            "suit": "p",
+          },
+        ],
+        "type": "面子",
+      },
+    ],
+  },
+]
+`;
