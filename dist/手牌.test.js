@@ -44,16 +44,16 @@ describe("手牌", () => {
 });
 describe("手牌解析13", () => {
     const sample副露1 = new 副露({
-        宣言: "ポン",
-        鳴いた牌: new 牌("1m"),
-        ほかの牌: [new 牌("1m"), new 牌("1m")],
-        誰から: "上家",
+        call: "ポン",
+        called牌: new 牌("1m"),
+        other牌: [new 牌("1m"), new 牌("1m")],
+        from: "上家",
     });
     const sample副露2 = new 副露({
-        宣言: "チー",
-        鳴いた牌: new 牌("2p"),
-        ほかの牌: [new 牌("3p"), new 牌("4p")],
-        誰から: "上家",
+        call: "チー",
+        called牌: new 牌("2p"),
+        other牌: [new 牌("3p"), new 牌("4p")],
+        from: "上家",
     });
     describe("テンパイ", () => {
         test("シャンポン", () => {
@@ -458,6 +458,72 @@ describe("手牌解析13", () => {
                     new 牌("7z"),
                 ]);
             });
+            test("浮き牌ありヘッドレス", () => {
+                const arg = [
+                    new 牌("1m"),
+                    new 牌("5m"),
+                    new 牌("6m"),
+                    new 牌("8m"),
+                    new 牌("8m"),
+                    new 牌("8m"),
+                    new 牌("9m"),
+                ];
+                const t = new 手牌(arg);
+                const analysis = t.getAnalysisResult13();
+                if (analysis === null)
+                    throw new Error("analysis is null");
+                expect(analysis.シャンテン数).toBe(1);
+                expect(analysis.有効牌).toEqual([new 牌("1m"), new 牌("4m"), new 牌("7m"), new 牌("9m")]);
+            });
+            test("ブロックオーバー", () => {
+                const arg = [
+                    new 牌("1m"),
+                    new 牌("2m"),
+                    new 牌("4m"),
+                    new 牌("5m"),
+                    new 牌("6m"),
+                    new 牌("5p"),
+                    new 牌("6p"),
+                ];
+                const t = new 手牌(arg);
+                const analysis = t.getAnalysisResult13();
+                if (analysis === null)
+                    throw new Error("analysis is null");
+                expect(analysis.シャンテン数).toBe(1);
+                expect(analysis.有効牌).toEqual([
+                    new 牌("1m"),
+                    new 牌("2m"),
+                    new 牌("3m"),
+                    new 牌("4p"),
+                    new 牌("5p"),
+                    new 牌("6p"),
+                    new 牌("7p"),
+                ]);
+            });
+            test("0面子", () => {
+                const arg = [
+                    new 牌("2m"),
+                    new 牌("4m"),
+                    new 牌("4m"),
+                    new 牌("6m"),
+                    new 牌("6m"),
+                    new 牌("8m"),
+                    new 牌("8m"),
+                ];
+                const t = new 手牌(arg);
+                const analysis = t.getAnalysisResult13();
+                if (analysis === null)
+                    throw new Error("analysis is null");
+                expect(analysis.シャンテン数).toBe(1);
+                expect(analysis.有効牌).toEqual([
+                    new 牌("3m"),
+                    new 牌("4m"),
+                    new 牌("5m"),
+                    new 牌("6m"),
+                    new 牌("7m"),
+                    new 牌("8m"),
+                ]);
+            });
         });
         describe("2シャンテン", () => {
             test("二盃口", () => {
@@ -483,8 +549,6 @@ describe("手牌解析13", () => {
                 expect(analysis.シャンテン数).toBe(2);
                 expect(analysis.有効牌).toEqual([
                     new 牌("1m"),
-                    new 牌("2m"),
-                    new 牌("3m"),
                     new 牌("4m"),
                     new 牌("3p"),
                     new 牌("4p"),

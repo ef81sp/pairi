@@ -55,8 +55,10 @@ const seek有効牌5ブロックノーテン = (extractResult) => {
         if (面子塔子数 === required面子塔子num) {
             result.push(...flattenRest(extractResult.rest));
         }
-        for (const 塔子 of extractResult.塔子) {
-            result.push(...塔子.component.map((p) => p.clone()));
+        else if (面子塔子数 > required面子塔子num) {
+            for (const 塔子 of extractResult.塔子) {
+                result.push(...塔子.component.map((p) => p.clone()));
+            }
         }
     }
     const uniqueResult = result

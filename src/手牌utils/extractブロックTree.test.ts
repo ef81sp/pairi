@@ -43,18 +43,3 @@ test("flatTree", () => {
     })
   expect(result).toMatchSnapshot()
 })
-// test("bug", () => {
-//   const result = extract塔子Tree({
-//     m: (["2m", "4m", "4m", "6m", "6m", "8m", "8m"] as const).map((s) => new 牌(s)),
-//     p: [] as const,
-//     s: [] as const,
-//     z: [] as const,
-//   })
-//     .flatMap(flatTree)
-//     // 重複除去
-//     .filter((r, i, arr) => {
-//       const rStr = JSON.stringify(r)
-//       return arr.findIndex((r2) => JSON.stringify(r2) === rStr) === i
-//     })
-//   console.dir(result, { depth: null })
-// })

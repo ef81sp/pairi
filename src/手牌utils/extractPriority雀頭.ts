@@ -47,7 +47,6 @@ export const extractPriority雀頭 = (手牌: T手牌Suit別): ExtractResult5ブ
     calcシャンテン数5ブロック(r),
     r,
   ])
-  console.dir(シャンテン数付きresult, { depth: null })
 
   const min = Math.min(...シャンテン数付きresult.map(([s]) => s))
   const filteredResults = シャンテン数付きresult

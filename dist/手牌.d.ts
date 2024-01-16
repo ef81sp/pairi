@@ -16,10 +16,10 @@ export declare class 手牌 {
     protected analysisResult14: analysisResult14 | null;
     constructor(普通: T手牌普通, 副露?: T手牌副露);
     protected sort(): void;
-    マンズ(): 牌[];
-    ピンズ(): 牌[];
-    ソーズ(): 牌[];
-    字牌(): 牌[];
+    protected マンズ(): 牌[];
+    protected ピンズ(): 牌[];
+    protected ソーズ(): 牌[];
+    protected 字牌(): 牌[];
     toString普通(): string;
     doツモ(ツモ: 牌): void;
     do副露(副露: 副露): void;

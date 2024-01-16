@@ -43,7 +43,7 @@ export class 手牌 {
     do副露(副露) {
         if (this.副露.length === 4)
             throw new Error("副露できるのは4回まで");
-        for (const p of 副露.ほかの牌) {
+        for (const p of 副露.other牌) {
             if (p === undefined)
                 throw new Error("副露のほかの牌に undefined が含まれている");
             if (!this.普通.some((p2) => p2.toEqual(p))) {
@@ -51,7 +51,7 @@ export class 手牌 {
             }
         }
         this.副露 = [...this.副露, 副露];
-        for (const p of 副露.ほかの牌) {
+        for (const p of 副露.other牌) {
             if (p === undefined)
                 throw new Error("副露のほかの牌に undefined が含まれている");
             const index = this.普通.findIndex((p2) => p2.toEqual(p));
