@@ -454,6 +454,46 @@ describe("手牌解析13", () => {
           new 牌("7z"),
         ])
       })
+      test("浮き牌ありヘッドレス", () => {
+        const arg: T手牌普通 = [
+          new 牌("1m"),
+          new 牌("5m"),
+          new 牌("6m"),
+          new 牌("8m"),
+          new 牌("8m"),
+          new 牌("8m"),
+          new 牌("9m"),
+        ]
+        const t = new 手牌(arg)
+        const analysis = t.getAnalysisResult13()
+        if (analysis === null) throw new Error("analysis is null")
+        expect(analysis.シャンテン数).toBe(1)
+        expect(analysis.有効牌).toEqual([new 牌("1m"), new 牌("4m"), new 牌("7m"), new 牌("9m")])
+      })
+      test("ブロックオーバー", () => {
+        const arg: T手牌普通 = [
+          new 牌("1m"),
+          new 牌("2m"),
+          new 牌("4m"),
+          new 牌("5m"),
+          new 牌("6m"),
+          new 牌("5p"),
+          new 牌("6p"),
+        ]
+        const t = new 手牌(arg)
+        const analysis = t.getAnalysisResult13()
+        if (analysis === null) throw new Error("analysis is null")
+        expect(analysis.シャンテン数).toBe(1)
+        expect(analysis.有効牌).toEqual([
+          new 牌("1m"),
+          new 牌("2m"),
+          new 牌("3m"),
+          new 牌("4p"),
+          new 牌("5p"),
+          new 牌("6p"),
+          new 牌("7p"),
+        ])
+      })
     })
     describe("2シャンテン", () => {
       test("二盃口", () => {
@@ -479,8 +519,6 @@ describe("手牌解析13", () => {
         expect(analysis.シャンテン数).toBe(2)
         expect(analysis.有効牌).toEqual([
           new 牌("1m"),
-          new 牌("2m"),
-          new 牌("3m"),
           new 牌("4m"),
           new 牌("3p"),
           new 牌("4p"),

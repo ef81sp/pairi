@@ -80,11 +80,11 @@ const seek有効牌5ブロックノーテン = (extractResult: ExtractResult5ブ
     // 雀頭がなく、雀頭以外のブロックが足りている場合、restは雀頭にならないといけない
     if (面子塔子数 === required面子塔子num) {
       result.push(...flattenRest(extractResult.rest))
-    }
-
-    // 雀頭がない場合は、塔子が雀頭になるケースもある
-    for (const 塔子 of extractResult.塔子) {
-      result.push(...塔子.component.map((p) => p.clone()))
+    } else if (面子塔子数 > required面子塔子num) {
+      // 雀頭がなくブロックオーバーの場合は、塔子が雀頭になる
+      for (const 塔子 of extractResult.塔子) {
+        result.push(...塔子.component.map((p) => p.clone()))
+      }
     }
   }
 
