@@ -538,6 +538,30 @@ describe("手牌解析13", () => {
           new 牌("6z"),
         ])
       })
+      test("0面子", () => {
+        const arg: T手牌普通 = [
+          new 牌("2m"),
+          new 牌("4m"),
+          new 牌("4m"),
+          new 牌("6m"),
+          new 牌("6m"),
+          new 牌("8m"),
+          new 牌("8m"),
+        ]
+        const t = new 手牌(arg)
+        const analysis = t.getAnalysisResult13()
+        if (analysis === null) throw new Error("analysis is null")
+
+        expect(analysis.シャンテン数).toBe(1)
+        expect(analysis.有効牌).toEqual([
+          new 牌("3m"),
+          new 牌("4m"),
+          new 牌("5m"),
+          new 牌("6m"),
+          new 牌("7m"),
+          new 牌("8m"),
+        ])
+      })
     })
     test("十三無靠", () => {
       const arg: T手牌普通 = [

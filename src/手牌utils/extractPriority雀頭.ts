@@ -16,12 +16,25 @@ export const extractPriority雀頭 = (手牌: T手牌Suit別): ExtractResult5ブ
   // ブロック(面子・塔子)を抽出する
   for (const 雀頭 of 雀頭List) {
     const 面子List = flatTrees(extract面子Tree(雀頭.rest))
-    for (const 面子 of 面子List) {
-      const 塔子List = flatTrees(extract塔子Tree(面子.rest))
+    if (面子List.length > 0) {
+      for (const 面子 of 面子List) {
+        const 塔子List = flatTrees(extract塔子Tree(面子.rest))
+        for (const 塔子 of 塔子List) {
+          results.push({
+            雀頭: 雀頭.ブロック,
+            面子: 面子.ブロック,
+            塔子: 塔子.ブロック,
+            rest: 塔子.rest,
+          })
+        }
+      }
+    } else {
+      const 塔子List = flatTrees(extract塔子Tree(雀頭.rest))
+      // 塔子がとれなくても、restだけを含んだ配列が返ってくるので、これで動く
       for (const 塔子 of 塔子List) {
         results.push({
           雀頭: 雀頭.ブロック,
-          面子: 面子.ブロック,
+          面子: [],
           塔子: 塔子.ブロック,
           rest: 塔子.rest,
         })
@@ -34,6 +47,8 @@ export const extractPriority雀頭 = (手牌: T手牌Suit別): ExtractResult5ブ
     calcシャンテン数5ブロック(r),
     r,
   ])
+  console.dir(シャンテン数付きresult, { depth: null })
+
   const min = Math.min(...シャンテン数付きresult.map(([s]) => s))
   const filteredResults = シャンテン数付きresult
     .filter(([シャンテン数]) => シャンテン数 === min)
