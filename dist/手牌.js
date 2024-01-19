@@ -100,7 +100,10 @@ export class 手牌 {
         return this.analysisResult14;
     }
     牌List() {
-        return [...this.普通, ...this.副露.flatMap((f) => f.to牌List())];
+        const _牌List = [...this.普通, ...this.副露.flatMap((f) => f.to牌List())];
+        if (this.ツモ)
+            _牌List.push(this.ツモ);
+        return _牌List;
     }
     analyze13() {
         const analysisResult = analyze13({

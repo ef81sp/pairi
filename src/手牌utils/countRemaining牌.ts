@@ -16,3 +16,13 @@ export const countRemaining牌num = (
   }
   return map
 }
+
+if (import.meta.vitest) {
+  test("全枯れ", () => {
+    const result = countRemaining牌num(
+      [new 牌("1m")],
+      [new 牌("1m"), new 牌("1m"), new 牌("1m"), new 牌("1m")],
+    )
+    expect(result.get("1m")).toEqual({ 牌: new 牌("1m"), remains: 0 })
+  })
+}

@@ -662,4 +662,27 @@ describe("手牌解析14", () => {
     expect(analysis.size).toBe(8)
     expect(analysis).toMatchSnapshot()
   })
+  test("ツモ牌を含めた4枚使いのカウントが正しい", () => {
+    const t = new 手牌([
+      new 牌("1s"),
+      new 牌("1s"),
+      new 牌("1s"),
+      new 牌("2s"),
+      new 牌("3s"),
+      new 牌("4s"),
+      new 牌("5s"),
+      new 牌("6s"),
+      new 牌("7s"),
+      new 牌("8s"),
+      new 牌("9s"),
+      new 牌("9s"),
+      new 牌("9s"),
+    ])
+    t.doツモ(new 牌("1s"))
+    const analysis = t.getAnalysisResult14()
+    if (analysis === null) throw new Error("analysis is null")
+    expect(analysis.get("2s")?.analysisResult.remaining有効牌num.get("1s")?.remains).toBe(0)
+    expect(analysis.get("2s")?.analysisResult.remaining有効牌num.get("2s")?.remains).toBe(3)
+
+  })
 })
