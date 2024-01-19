@@ -35,6 +35,7 @@ export declare class 手牌 {
     getAnalysisResult13(): AnalysisResult13 | null;
     getAnalysisResult14(): analysisResult14 | null;
     牌List(): 牌[];
+    牌ListExcludesツモ(): 牌[];
     protected analyze13(): AnalysisResult13;
     protected analyze14({ is副露後 }?: {
         is副露後: boolean;

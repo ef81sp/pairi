@@ -195,6 +195,16 @@ export class 手牌 {
   }
 
   /**
+   * Returns a list of all 牌s in the hand, excluding the ツモ 牌.
+   * @returns A list of all 牌s in the hand, excluding the ツモ 牌.
+   */
+  牌ListExcludesツモ() {
+    const _牌List = [...this.普通, ...this.副露.flatMap((f) => f.to牌List())]
+
+    return sort牌List(_牌List)
+  }
+
+  /**
    * Performs analysis for 13-牌 hand.
    * @returns The analysis result for 13-牌 hand.
    */
