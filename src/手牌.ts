@@ -190,7 +190,8 @@ export class 手牌 {
   牌List() {
     const _牌List = [...this.普通, ...this.副露.flatMap((f) => f.to牌List())]
     if (this.ツモ) _牌List.push(this.ツモ)
-    return _牌List
+
+    return sort牌List(_牌List)
   }
 
   /**
