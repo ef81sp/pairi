@@ -228,7 +228,7 @@ export class 手牌 {
       const i = hand.findIndex((p) => p.toEqual(牌))
       result.set(牌.toString(), {
         打牌: 牌,
-        analysisResult: analyze13(牌ListToSuit別(hand.toSpliced(i, 1)), this.牌List()),
+        analysisResult: analyze13(牌ListToSuit別(hand.toSpliced(i, 1)), [...this.牌List(), 牌]),
       })
     }
     this.analysisResult13 = null

@@ -429,7 +429,7 @@ Map {
       },
       "remaining有効牌num": Map {
         "1m" => {
-          "remains": 2,
+          "remains": 1,
           "牌": 牌 {
             "is赤牌": false,
             "number": 1,
@@ -912,7 +912,7 @@ Map {
       },
       "remaining有効牌num": Map {
         "2m" => {
-          "remains": 2,
+          "remains": 1,
           "牌": 牌 {
             "is赤牌": false,
             "number": 2,
@@ -1380,7 +1380,7 @@ Map {
       },
       "remaining有効牌num": Map {
         "3m" => {
-          "remains": 2,
+          "remains": 1,
           "牌": 牌 {
             "is赤牌": false,
             "number": 3,
@@ -2302,7 +2302,7 @@ Map {
           },
         },
         "4p" => {
-          "remains": 2,
+          "remains": 1,
           "牌": 牌 {
             "is赤牌": false,
             "number": 4,
@@ -2898,7 +2898,7 @@ Map {
           },
         },
         "5p" => {
-          "remains": 2,
+          "remains": 1,
           "牌": 牌 {
             "is赤牌": false,
             "number": 5,
@@ -4723,7 +4723,7 @@ Map {
           },
         },
         "7p" => {
-          "remains": 3,
+          "remains": 2,
           "牌": 牌 {
             "is赤牌": false,
             "number": 7,
