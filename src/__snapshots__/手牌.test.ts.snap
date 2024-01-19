@@ -2329,7 +2329,7 @@ Map {
           },
         },
         "7p" => {
-          "remains": 3,
+          "remains": 2,
           "牌": 牌 {
             "is赤牌": false,
             "number": 7,
@@ -2916,7 +2916,7 @@ Map {
           },
         },
         "7p" => {
-          "remains": 3,
+          "remains": 2,
           "牌": 牌 {
             "is赤牌": false,
             "number": 7,
@@ -4723,7 +4723,7 @@ Map {
           },
         },
         "7p" => {
-          "remains": 2,
+          "remains": 1,
           "牌": 牌 {
             "is赤牌": false,
             "number": 7,
