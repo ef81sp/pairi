@@ -1,4 +1,4 @@
-import { 牌 } from "./牌"
+import { 牌 } from "./牌.mjs"
 describe("牌のテスト", () => {
   test("suitが正しい", () => {
     expect(new 牌("1m").suit).toBe("m")

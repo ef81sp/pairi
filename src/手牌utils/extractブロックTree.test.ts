@@ -1,5 +1,5 @@
-import { 牌 } from "../牌"
-import { extract塔子Tree, extract面子Tree, flatTree } from "./extractブロックTree"
+import { 牌 } from "../牌.mjs"
+import { extract塔子Tree, extract面子Tree, flatTree } from "./extractブロックTree.mjs"
 
 test("面子抽出", () => {
   const result = extract面子Tree({

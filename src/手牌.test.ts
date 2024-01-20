@@ -1,7 +1,7 @@
-import { shuffle } from "./utils/utils"
-import { 副露 } from "./副露"
-import { T手牌普通, 手牌 } from "./手牌"
-import { 牌 } from "./牌"
+import { shuffle } from "./utils/utils.mjs"
+import { 副露 } from "./副露.mjs"
+import { T手牌普通, 手牌 } from "./手牌.mjs"
+import { 牌 } from "./牌.mjs"
 
 const a = [1, 2, 3]
 

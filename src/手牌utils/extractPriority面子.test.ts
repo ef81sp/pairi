@@ -1,6 +1,6 @@
-import { generate手牌Suit別ForTest } from "../utils/utils"
-import { 牌 } from "../牌"
-import { extractPriority面子 } from "./extractPriority面子"
+import { generate手牌Suit別ForTest } from "../utils/utils.mjs"
+import { 牌 } from "../牌.mjs"
+import { extractPriority面子 } from "./extractPriority面子.mjs"
 
 test("通常 - 一向聴", () => {
   const 手牌Suit別 = generate手牌Suit別ForTest({

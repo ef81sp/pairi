@@ -1,6 +1,6 @@
-import { 牌 } from "../牌"
-import { extractSingleブロック } from "./extractSingleブロック"
-import { T手牌Suit別 } from "./手牌utils.type"
+import { 牌 } from "../牌.mjs"
+import { extractSingleブロック } from "./extractSingleブロック.mjs"
+import { T手牌Suit別 } from "./手牌utils.type.mjs"
 
 describe("単体抽出", () => {
   test("雀頭 - とれる", () => {

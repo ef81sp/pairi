@@ -1,5 +1,5 @@
-import { generate手牌Suit別ForTest } from "../utils/utils"
-import { extract七対子, extract国士無双 } from "./extract特殊役"
+import { generate手牌Suit別ForTest } from "../utils/utils.mjs"
+import { extract七対子, extract国士無双 } from "./extract特殊役.mjs"
 
 test("七対子 - 一向聴", () => {
   const 手牌Suit別 = generate手牌Suit別ForTest({

@@ -1,22 +1,23 @@
 {
   "name": "pairi",
   "private": true,
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "",
-  "main": "dist/index.js",
-  "module": "./dist/index.js",
+  "main": "dist/index.mjs",
+  "module": "./dist/index.mjs",
   "type": "module",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./dist/index.mjs"
     }
   },
   "scripts": {
     "test": "vitest",
-    "format": "pnpm dlx @biomejs/biome check --apply ./src"
+    "format": "pnpm dlx @biomejs/biome check --apply ./src",
+    "build": "tsc -p tsconfig.build.json"
   },
   "keywords": [],
   "author": "ef81sp / p_craft",

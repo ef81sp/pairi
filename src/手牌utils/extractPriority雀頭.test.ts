@@ -1,7 +1,7 @@
-import { Str牌 } from "../utils/types"
-import { generate手牌Suit別ForTest } from "../utils/utils"
-import { 牌 } from "../牌"
-import { extractPriority雀頭 } from "./extractPriority雀頭"
+import { Str牌 } from "../utils/types.mjs"
+import { generate手牌Suit別ForTest } from "../utils/utils.mjs"
+import { 牌 } from "../牌.mjs"
+import { extractPriority雀頭 } from "./extractPriority雀頭.mjs"
 
 test("通常 - 一向聴", () => {
   const 手牌Suit別 = generate手牌Suit別ForTest({
