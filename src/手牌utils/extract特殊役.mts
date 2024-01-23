@@ -15,6 +15,23 @@ export const extract七対子 = (手牌: T手牌Suit別): ExtractResult七対子
       rest: 手牌,
     }
   }
+  // ブロック内にまったく同一の対子がある場合は、片方をrestに書き戻す
+  // 七対子.ブロックから重複している対子のインデックスを探す。ひとつだけでよい
+  // あれば、その対子をrestに書き戻す
+  const duplicatedIndex = 七対子.ブロック.findIndex((対子, index, array) => {
+    return array.findIndex((対子2) => {
+      return 対子.component[0].toString() === 対子2.component[0].toString()
+    }) !== index
+  })
+  if (duplicatedIndex !== -1) {
+    const duplicated対子 = 七対子.ブロック[duplicatedIndex]
+    if (duplicated対子 === undefined) throw new Error("duplicated対子 is undefined")
+    七対子.ブロック.splice(duplicatedIndex, 1)
+    七対子.rest[duplicated対子.component[0].suit].push(duplicated対子.component[0])
+    七対子.rest[duplicated対子.component[1].suit].push(duplicated対子.component[1])
+  }
+ 
+
   return {
     対子: 七対子.ブロック,
     rest: 七対子.rest,

@@ -1,5 +1,6 @@
 import { countRequiredブロックnum } from "./countRequiredブロックnum.mjs"
 import { count牌 } from "./count牌.mjs"
+import { flattenRest } from "./seek有効牌.mjs"
 import {
   ExtractResult5ブロック,
   ExtractResult七対子,
@@ -34,7 +35,19 @@ export const calcシャンテン数5ブロック = (
 }
 
 export const calcシャンテン数七対子 = (extractResult七対子: ExtractResult七対子): number => {
-  return 6 - extractResult七対子.対子.length
+  let result = 6 - extractResult七対子.対子.length
+
+  // restに対子に含まれる牌がある場合は、その種類の数だけシャンテン数が増える
+  const uniqueFlattenRest = flattenRest(extractResult七対子.rest).filter(
+    (p, index, array) => array.findIndex((p2) => p2.toString() === p.toString()) === index,
+  )
+  for (const rest of uniqueFlattenRest) {
+    if (extractResult七対子.対子.some((対子) => 対子.component[0].toEqual(rest))) {
+      result += 1
+    }
+  }
+
+  return result
 }
 
 export const calcシャンテン数国士無双 = (extractResult国士無双: ExtractResult国士無双): number => {

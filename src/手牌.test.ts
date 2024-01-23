@@ -1,3 +1,4 @@
+import { generate牌List } from "./utils/testUtils"
 import { shuffle } from "./utils/utils.mjs"
 import { 副露 } from "./副露.mjs"
 import { T手牌普通, 手牌 } from "./手牌.mjs"
@@ -518,6 +519,35 @@ describe("手牌解析13", () => {
           new 牌("8m"),
         ])
       })
+      describe("七対子", () => {
+        describe("3枚使い", () => {
+          const arg: T手牌普通 = [
+            new 牌("1m"),
+            new 牌("1m"),
+            new 牌("1m"),
+            new 牌("6m"),
+            new 牌("6m"),
+            new 牌("5p"),
+            new 牌("5p"),
+            new 牌("6p"),
+            new 牌("6p"),
+            new 牌("8p"),
+            new 牌("8p"),
+            new 牌("2z"),
+            new 牌("2z"),
+          ]
+          const t = new 手牌(arg)
+          const analysis = t.getAnalysisResult13()
+          if (analysis === null) throw new Error("analysis is null")
+          test("認められず、シャンテン数が1になる", () => {
+            expect(analysis.シャンテン数).toBe(1)
+            expect(analysis.analysisResult.七対子.シャンテン数).toBe(1)
+          })
+          test("かぶりのない牌がないので、有効牌が空になる", () => {
+            expect(analysis.analysisResult.七対子.有効牌).toEqual([])
+          })
+        })
+      })
     })
     describe("2シャンテン", () => {
       test("二盃口", () => {
@@ -635,6 +665,35 @@ describe("手牌解析13", () => {
         new 牌("4z"),
       ])
     })
+    describe("七対子", () => {
+      describe("4枚使い", () => {
+        const arg: T手牌普通 = [
+          new 牌("1m"),
+          new 牌("1m"),
+          new 牌("1m"),
+          new 牌("1m"),
+          new 牌("6m"),
+          new 牌("6m"),
+          new 牌("5p"),
+          new 牌("5p"),
+          new 牌("6p"),
+          new 牌("6p"),
+          new 牌("8p"),
+          new 牌("2z"),
+          new 牌("2z"),
+        ]
+        const t = new 手牌(arg)
+        const analysis = t.getAnalysisResult13()
+        if (analysis === null) throw new Error("analysis is null")
+        test("認められず、シャンテン数が2になる", () => {
+          expect(analysis.シャンテン数).toBe(2)
+          expect(analysis.analysisResult.七対子.シャンテン数).toBe(2)
+        })
+        test("対子で使われていない牌が有効牌", () => {
+          expect(analysis.analysisResult.七対子.有効牌).toEqual(generate牌List(["8p"]))
+        })
+      })
+    })
   })
 })
 describe("手牌解析14", () => {
@@ -683,6 +742,5 @@ describe("手牌解析14", () => {
     if (analysis === null) throw new Error("analysis is null")
     expect(analysis.get("2s")?.analysisResult.remaining有効牌num.get("1s")?.remains).toBe(0)
     expect(analysis.get("2s")?.analysisResult.remaining有効牌num.get("2s")?.remains).toBe(3)
-
   })
 })
