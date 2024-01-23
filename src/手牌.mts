@@ -1,7 +1,7 @@
 import { Str牌 } from "./utils/types.mjs"
 import { 副露 } from "./副露.mjs"
 import { AnalysisResult13, analyze13 } from "./手牌utils/analyze手牌.mjs"
-import { sort牌List, unique牌List } from "./手牌utils/format牌List.mjs"
+import { sort牌List, unique牌List } from "./手牌utils/utils/format牌List.mjs"
 import { T手牌Suit別 } from "./手牌utils/手牌utils.type.mjs"
 import { 牌 } from "./牌.mjs"
 

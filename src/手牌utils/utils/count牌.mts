@@ -1,5 +1,5 @@
-import { flattenRest } from "./seek有効牌.mjs"
-import { ExtractResult5ブロック } from "./手牌utils.type.mjs"
+import { flattenRest } from "../seek有効牌.mjs"
+import { ExtractResult5ブロック } from "../手牌utils.type.mjs"
 
 export const count牌 = (extractResult5ブロック: ExtractResult5ブロック): number => {
   let count = 0

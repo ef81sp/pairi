@@ -1,12 +1,15 @@
 import { isStr牌, 牌 } from "../牌.mjs"
-import { countRequiredブロックnum } from "./countRequiredブロックnum.mjs"
-import { count牌 } from "./count牌.mjs"
+import { countRequiredブロックnum } from "./utils/countRequiredブロックnum.mjs"
+import { count牌 } from "./utils/count牌.mjs"
+import { is暗刻 } from "./utils/is暗刻.mjs"
 import {
   ExtractResult5ブロック,
   ExtractResult七対子,
   ExtractResult国士無双,
   T塔子,
   T手牌Suit別,
+  T雀頭,
+  T面子,
 } from "./手牌utils.type.mjs"
 
 export const seek有効牌5ブロック = (
@@ -67,11 +70,13 @@ const seek有効牌5ブロックノーテン = (extractResult: ExtractResult5ブ
   }
 
   // 雀頭以外のブロックが足りない場合のみ、①restが塔子になる牌 ②雀頭の牌 が有効牌になる
+  const restList = flattenRest(extractResult.rest)
   if (面子塔子数 < required面子塔子num) {
-    for (const rest of flattenRest(extractResult.rest)) {
-      result.push(...seekRestTo塔子(rest))
+    for (const rest of restList) {
+      result.push(...seekRestTo塔子(rest, extractResult.雀頭, extractResult.面子))
     }
-    if (extractResult.雀頭) {
+    // 浮き牌に同じ牌がない場合のみ、雀頭が有効牌になる
+    if (extractResult.雀頭 && !restList.some((p) => extractResult.雀頭?.component[0].toEqual(p))) {
       result.push(extractResult.雀頭.component[0].clone())
     }
   }
@@ -79,7 +84,7 @@ const seek有効牌5ブロックノーテン = (extractResult: ExtractResult5ブ
   if (!extractResult.雀頭) {
     // 雀頭がなく、雀頭以外のブロックが足りている場合、restは雀頭にならないといけない
     if (面子塔子数 === required面子塔子num) {
-      result.push(...flattenRest(extractResult.rest))
+      result.push(...restList.filter(r=> !isSameAs雀頭Or暗刻(r, extractResult.雀頭, extractResult.面子)))
     } else if (面子塔子数 > required面子塔子num) {
       // 雀頭がなくブロックオーバーの場合は、塔子が雀頭になる
       for (const 塔子 of extractResult.塔子) {
@@ -141,8 +146,9 @@ const seek塔子To面子 = (塔子: T塔子): 牌[] => {
   }
 }
 
-const seekRestTo塔子 = (浮き牌: 牌): 牌[] => {
+const seekRestTo塔子 = (浮き牌: 牌, 雀頭: T雀頭 | null, 面子List: T面子[]): 牌[] => {
   const n = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  const 暗刻List = 面子List.filter((m) => m.component[0].toEqual(m.component[1]))
   switch (浮き牌.suit) {
     // m, p, s なら、2つとなりまでの牌
     case "m":
@@ -153,15 +159,27 @@ const seekRestTo塔子 = (浮き牌: 牌): 牌[] => {
       const max = Math.min(8, index + 2)
       const targetNum = n.slice(min, max + 1)
 
-      return targetNum.map((n) => {
-        const str = `${n}${浮き牌.suit}`
-        if (!isStr牌(str)) throw new Error(`invalid str: ${str}`)
-        return new 牌(str)
-      })
+      return targetNum
+        .map((n) => {
+          const str = `${n}${浮き牌.suit}`
+          if (!isStr牌(str)) throw new Error(`invalid str: ${str}`)
+          return new 牌(str)
+        })
+        .filter((p) => {
+          // 雀頭と同じ牌は除外
+          return !isSameAs雀頭Or暗刻(p, 雀頭, 暗刻List)
+        })
     }
     // z なら、同じ牌
     case "z": {
-      return [浮き牌.clone()]
+      return isSameAs雀頭Or暗刻(浮き牌, 雀頭, 暗刻List) ? [] : [浮き牌.clone()]
     }
   }
+}
+
+function isSameAs雀頭Or暗刻(浮き牌: 牌, 雀頭: T雀頭 | null, 面子List: T面子[]) {
+  if (雀頭?.component[0].toEqual(浮き牌)) return true
+  if (面子List.filter((m) => is暗刻(m)).some((暗刻) => 暗刻.component[0].toEqual(浮き牌)))
+    return true
+  return false
 }

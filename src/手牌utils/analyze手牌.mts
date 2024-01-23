@@ -5,11 +5,11 @@ import {
   calcシャンテン数七対子,
   calcシャンテン数国士無双,
 } from "./calcシャンテン数.mjs"
-import { countRemaining牌num } from "./countRemaining牌.mjs"
+import { countRemaining牌num } from "./utils/countRemaining牌.mjs"
 import { extractPriority雀頭 } from "./extractPriority雀頭.mjs"
 import { extractPriority面子 } from "./extractPriority面子.mjs"
 import { extract七対子, extract国士無双 } from "./extract特殊役.mjs"
-import { unique牌List } from "./format牌List.mjs"
+import { unique牌List } from "./utils/format牌List.mjs"
 import { seek有効牌5ブロック, seek有効牌七対子, seek有効牌国士無双 } from "./seek有効牌.mjs"
 import { ExtractResult5ブロック, T手牌Suit別 } from "./手牌utils.type.mjs"
 

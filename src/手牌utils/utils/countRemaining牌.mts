@@ -1,5 +1,5 @@
-import { Str牌 } from "../utils/types.mjs"
-import { 牌 } from "../牌.mjs"
+import { Str牌 } from "../../utils/types.mjs"
+import { 牌 } from "../../牌.mjs"
 
 export const countRemaining牌num = (
   target: 牌[],
