@@ -83,13 +83,12 @@ const seek有効牌5ブロックノーテン = (extractResult: ExtractResult5ブ
   }
 
   if (!extractResult.雀頭) {
+    const 暗刻List = extract暗刻List(extractResult.面子)
     // 雀頭がなく、雀頭以外のブロックが足りている場合、
     if (面子塔子数 === required面子塔子num) {
       // restは雀頭にならないといけない
       // restに暗刻で使われている牌しかない場合、それは雀頭になれない。その場合、暗刻で使われている牌以外すべてが有効牌になる
       if (restList.every((p) => isSameAs雀頭Or暗刻(p, null, extractResult.面子))) {
-        // TODO: ここ実装
-        const 暗刻List = extract暗刻List(extractResult.面子)
         result.push(
           ...whole牌List.filter((p) => 暗刻List.every((暗刻) => !暗刻.component[0].toEqual(p))),
         )
@@ -99,9 +98,13 @@ const seek有効牌5ブロックノーテン = (extractResult: ExtractResult5ブ
         )
       }
     } else if (面子塔子数 > required面子塔子num) {
-      // 雀頭がなくブロックオーバーの場合は、塔子が雀頭になる
+      // 雀頭がなくブロックオーバーの場合は、塔子が雀頭になる ただし、暗刻で使われている牌は除く
       for (const 塔子 of extractResult.塔子) {
-        result.push(...塔子.component.map((p) => p.clone()))
+        result.push(
+          ...塔子.component
+            .filter((p) => 暗刻List.every((暗刻) => !暗刻.component[0].toEqual(p)))
+            .map((p) => p.clone()),
+        )
       }
     }
   }

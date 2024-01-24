@@ -35,6 +35,26 @@ describe("seek有効牌5ブロック", () => {
         ]))
       })
     })
+    describe("4枚使い + その牌を含んだ塔子 + 塔子", () => {
+      const extractResult5ブロック: ExtractResult5ブロック = generateExtractResult5ブロックForTest(
+        null,
+        [["7p", "7p", "7p"]],
+        [
+          ["4p", "5p"],
+          ["5p", "7p"],
+        ],
+        {
+          m: [],
+          p: [],
+          s: [],
+          z: [],
+        },
+      )
+      const result = seek有効牌5ブロック(extractResult5ブロック, 1)
+      test("暗刻で使われている牌は有効牌に含まれない", () => {
+        expect(result).toEqual(generate牌ListForTest(["3p", "4p", "5p", "6p"]))
+      })
+    })
   })
 })
 
