@@ -313,6 +313,19 @@ describe("手牌解析13", () => {
         expect(analysis.有効牌).toEqual(generate牌ListForTest(["1p", "4p", "7p"]))
       })
     })
+    describe("槓子形隣り合わせ", () => {
+      const t = new 手牌(
+        generate牌ListForTest(["2p", "2p", "2p", "2p", "3p", "3p", "3p"]) as T手牌普通,
+      )
+      const analysis = t.getAnalysisResult13()
+      if (analysis === null) throw new Error("analysis is null")
+      test("テンパイ", () => {
+        expect(analysis.シャンテン数).toBe(0)
+      })
+      test("有効牌に4枚使いが含まれない", () => {
+        expect(analysis.有効牌).toEqual(generate牌ListForTest(["1p", "4p"]))
+      })
+    })
   })
   describe("ノーテン", () => {
     describe("1シャンテン", () => {
@@ -510,7 +523,7 @@ describe("手牌解析13", () => {
         ])
       })
       describe("4枚使い", () => {
-        describe("槓子形", () => {
+        describe("槓子形7枚", () => {
           const t = new 手牌(
             generate牌ListForTest(["2p", "2p", "2p", "2p", "5p", "5p", "5p"]) as T手牌普通,
           )
@@ -519,12 +532,19 @@ describe("手牌解析13", () => {
           test("1シャンテンになる", () => {
             expect(analysis.シャンテン数).toBe(1)
           })
-          test("有効牌に4枚使いが含まれない", () => {
-            expect(analysis.有効牌).toEqual(generate牌ListForTest(["1p", "3p", "4p", "6p", "7p"]))
+          test("手牌にある牌以外全てが有効牌になる", () => {
+            expect(analysis.有効牌).toEqual(
+              // biome-ignore format: みやすさ
+              generate牌ListForTest([
+                "1m", "2m", "3m", "4m", "5m", "6m", "7m", "8m", "9m",
+                "1p",       "3p", "4p",       "6p", "7p", "8p", "9p",
+                "1s", "2s", "3s", "4s", "5s", "6s", "7s", "8s", "9s",
+                "1z", "2z", "3z", "4z", "5z", "6z", "7z",
+              ]),
+            )
           })
         })
       })
-
       test("0面子", () => {
         const arg: T手牌普通 = [
           new 牌("2m"),

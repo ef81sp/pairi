@@ -1,4 +1,5 @@
 import { isStr牌, 牌 } from "../牌.mjs"
+import { whole牌List } from "./utils/const.mjs"
 import { countRequiredブロックnum } from "./utils/countRequiredブロックnum.mjs"
 import { count牌 } from "./utils/count牌.mjs"
 import { is暗刻 } from "./utils/is暗刻.mjs"
@@ -82,9 +83,21 @@ const seek有効牌5ブロックノーテン = (extractResult: ExtractResult5ブ
   }
 
   if (!extractResult.雀頭) {
-    // 雀頭がなく、雀頭以外のブロックが足りている場合、restは雀頭にならないといけない
+    // 雀頭がなく、雀頭以外のブロックが足りている場合、
     if (面子塔子数 === required面子塔子num) {
-      result.push(...restList.filter(r=> !isSameAs雀頭Or暗刻(r, extractResult.雀頭, extractResult.面子)))
+      // restは雀頭にならないといけない
+      // restに暗刻で使われている牌しかない場合、それは雀頭になれない。その場合、暗刻で使われている牌以外すべてが有効牌になる
+      if (restList.every((p) => isSameAs雀頭Or暗刻(p, null, extractResult.面子))) {
+        // TODO: ここ実装
+        const 暗刻List = extract暗刻List(extractResult.面子)
+        result.push(
+          ...whole牌List.filter((p) => 暗刻List.every((暗刻) => !暗刻.component[0].toEqual(p))),
+        )
+      } else {
+        result.push(
+          ...restList.filter((r) => !isSameAs雀頭Or暗刻(r, extractResult.雀頭, extractResult.面子)),
+        )
+      }
     } else if (面子塔子数 > required面子塔子num) {
       // 雀頭がなくブロックオーバーの場合は、塔子が雀頭になる
       for (const 塔子 of extractResult.塔子) {
@@ -148,7 +161,7 @@ const seek塔子To面子 = (塔子: T塔子): 牌[] => {
 
 const seekRestTo塔子 = (浮き牌: 牌, 雀頭: T雀頭 | null, 面子List: T面子[]): 牌[] => {
   const n = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-  const 暗刻List = 面子List.filter((m) => m.component[0].toEqual(m.component[1]))
+  const 暗刻List = extract暗刻List(面子List)
   switch (浮き牌.suit) {
     // m, p, s なら、2つとなりまでの牌
     case "m":
@@ -182,4 +195,8 @@ function isSameAs雀頭Or暗刻(浮き牌: 牌, 雀頭: T雀頭 | null, 面子Li
   if (面子List.filter((m) => is暗刻(m)).some((暗刻) => 暗刻.component[0].toEqual(浮き牌)))
     return true
   return false
+}
+
+function extract暗刻List(面子List: T面子[]) {
+  return 面子List.filter((m) => is暗刻(m))
 }
