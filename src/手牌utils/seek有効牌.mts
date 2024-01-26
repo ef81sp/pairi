@@ -182,8 +182,8 @@ const seekRestTo塔子 = (浮き牌: 牌, 雀頭: T雀頭 | null, 面子List: T�
           return new 牌(str)
         })
         .filter((p) => {
-          // 雀頭と同じ牌は除外
-          return !isSameAs雀頭Or暗刻(p, 雀頭, 暗刻List)
+          // 浮き牌が雀頭や暗刻と同じ牌の場合、浮き牌と同じ牌ではテンパイしないので、除外
+          return !(p.toEqual(浮き牌) && isSameAs雀頭Or暗刻(p, 雀頭, 暗刻List))
         })
     }
     // z なら、同じ牌
