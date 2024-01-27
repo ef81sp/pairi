@@ -11,6 +11,18 @@ export type T手牌普通 =
   | [牌, 牌, 牌, 牌, 牌, 牌, 牌]
   | [牌, 牌, 牌, 牌, 牌, 牌, 牌, 牌, 牌, 牌]
   | [牌, 牌, 牌, 牌, 牌, 牌, 牌, 牌, 牌, 牌, 牌, 牌, 牌]
+
+export const isT手牌普通 = (牌List: 牌[]): 牌List is T手牌普通 => {
+  return (
+    (牌List.length === 1 ||
+      牌List.length === 4 ||
+      牌List.length === 7 ||
+      牌List.length === 10 ||
+      牌List.length === 13) &&
+    牌List.every((p) => p instanceof 牌)
+  )
+}
+
 type T手牌副露 = [] | [副露] | [副露, 副露] | [副露, 副露, 副露] | [副露, 副露, 副露, 副露]
 type analysisResult14 = Map<
   Str牌,

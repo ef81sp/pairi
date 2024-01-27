@@ -35,7 +35,7 @@ export const calcシャンテン数5ブロック = (
   if (面子.length + 塔子.length >= requiredブロックnum) {
     シャンテン数 += 1
   }
-  // 雀頭と塔子が同一だと +1点
+  // 雀頭と塔子が同一(4枚使い)だと +1点
   if (
     雀頭 &&
     塔子.some(
@@ -46,10 +46,10 @@ export const calcシャンテン数5ブロック = (
   ) {
     シャンテン数 += 1
   }
-  // 単騎待ちの牌が暗刻で使われていると +1点
-  if (!雀頭 && 面子.length === required面子num && rest.length === 1) {
-    const tanki = rest[0]
-    if (tanki && 面子.some((面子) => is暗刻(面子) && 面子.component[0].toEqual(tanki))) {
+  // ヘッドレスで浮き牌が暗刻で使われていると +1点
+  if (!雀頭 && (面子.length + 塔子.length) === required面子num ) {
+    const 暗刻List = 面子.filter(m=>is暗刻(m))
+    if (rest.every(p => 暗刻List.some((面子) => 面子.component[0].toEqual(p)))) {
       シャンテン数 += 1
     }
   }

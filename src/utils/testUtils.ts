@@ -49,6 +49,17 @@ export const generateExtractResult5ブロックForTest = (
   }
 }
 
-export const generate牌ListForTest = (str牌List: Str牌[]): 牌[] => {
-  return str牌List.map((p) => new 牌(p))
+export const generate牌ListForTest = (
+  str牌List:
+    | Str牌[]
+    | {
+        [key in "m" | "p" | "s" | "z"]?: string
+      },
+): 牌[] => {
+  if (Array.isArray(str牌List)) {
+    return str牌List.map((p) => new 牌(p))
+  }
+  return Object.entries(str牌List).flatMap(([suit, numbers]) => {
+    return [...numbers].map((number) => new 牌(`${number}${suit}` as Str牌))
+  })
 }

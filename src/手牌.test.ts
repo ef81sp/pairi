@@ -1,7 +1,7 @@
 import { generate牌ListForTest } from "./utils/testUtils"
 import { shuffle } from "./utils/utils.mjs"
 import { 副露 } from "./副露.mjs"
-import { T手牌普通, 手牌 } from "./手牌.mjs"
+import { T手牌普通, isT手牌普通, 手牌 } from "./手牌.mjs"
 import { 牌 } from "./牌.mjs"
 
 describe("手牌", () => {
@@ -567,6 +567,20 @@ describe("手牌解析13", () => {
           new 牌("7m"),
           new 牌("8m"),
         ])
+      })
+      test("槓子2つ + 槓子隣の暗刻 + 両面", () => {
+        const arg = generate牌ListForTest({
+          s: "2222333568888",
+        })
+        if (!isT手牌普通(arg)) throw new Error("arg is not T手牌普通")
+        const t = new 手牌(arg)
+        const analysis = t.getAnalysisResult13()
+        if (analysis === null) throw new Error("analysis is null")
+        expect(analysis.有効牌).toEqual(
+          generate牌ListForTest({
+            s: "1457",
+          }),
+        )
       })
       describe("七対子", () => {
         describe("3枚使い", () => {

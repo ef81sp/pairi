@@ -5,5 +5,8 @@
   },
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
-  }
+  },
+  "vitest.commandLine": "pnpm run test",
+  "vitest.enable": true,
+  "vitest.showFailMessages": true
 }
