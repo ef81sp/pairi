@@ -47,9 +47,9 @@ export const calcシャンテン数5ブロック = (
     シャンテン数 += 1
   }
   // ヘッドレスで浮き牌が暗刻で使われていると +1点
-  if (!雀頭 && (面子.length + 塔子.length) === required面子num ) {
-    const 暗刻List = 面子.filter(m=>is暗刻(m))
-    if (rest.every(p => 暗刻List.some((面子) => 面子.component[0].toEqual(p)))) {
+  if (!雀頭 && 面子.length + 塔子.length === required面子num) {
+    const 暗刻List = 面子.filter((m) => is暗刻(m))
+    if (rest.every((p) => 暗刻List.some((面子) => 面子.component[0].toEqual(p)))) {
       シャンテン数 += 1
     }
   }
@@ -58,14 +58,20 @@ export const calcシャンテン数5ブロック = (
 export const calcシャンテン数七対子 = (extractResult七対子: ExtractResult七対子): number => {
   let result = 6 - extractResult七対子.対子.length
 
-  // restに対子に含まれる牌がある場合は、その種類の数だけシャンテン数が増える
-  const uniqueFlattenRest = flattenRest(extractResult七対子.rest).filter(
-    (p, index, array) => array.findIndex((p2) => p2.toString() === p.toString()) === index,
+  // 手牌の牌の種類が7種類未満の場合、足りない分だけシャンテン数が増える
+  const uniqueFlattenRest = flattenRest(extractResult七対子.rest)
+    .filter((p, index, array) => array.findIndex((p2) => p2.toEqual(p)) === index)
+    .map((p) => p.toString())
+
+  const unique牌List = Array.from(
+    new Set([
+      ...extractResult七対子.対子.map((対子) => 対子.component[0].toString()),
+      ...uniqueFlattenRest,
+    ]),
   )
-  for (const rest of uniqueFlattenRest) {
-    if (extractResult七対子.対子.some((対子) => 対子.component[0].toEqual(rest))) {
-      result += 1
-    }
+  const kinds牌 = unique牌List.length
+  if (kinds牌 < 7) {
+    result += 7 - kinds牌
   }
 
   return result

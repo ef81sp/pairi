@@ -610,6 +610,34 @@ describe("手牌解析13", () => {
             expect(analysis.analysisResult.七対子.有効牌).toEqual([])
           })
         })
+        describe("メンツ手でもイーシャンテン", () => {
+          const arg = generate牌ListForTest({
+            m: "1122355566899",
+          })
+          if (!isT手牌普通(arg)) throw new Error("arg is not T手牌普通")
+          const t = new 手牌(arg)
+          const analysis = t.getAnalysisResult13()
+          if (analysis === null) throw new Error("analysis is null")
+
+          test("メンツ手と七対子両方の有効牌が出る", () => {
+            expect(analysis.有効牌).toEqual(
+              generate牌ListForTest({
+                m: "36789",
+              }),
+            )
+          })
+          describe("シャンテン数", () => {
+            test("全体で1シャンテン", () => {
+              expect(analysis.シャンテン数).toBe(1)
+            })
+            test("七対子は1シャンテン", () => {
+              expect(analysis.analysisResult.七対子.シャンテン数).toBe(1)
+            })
+            test("メンツ手は1シャンテン", () => {
+              expect(analysis.analysisResult._5ブロック.シャンテン数).toBe(1)
+            })
+          })
+        })
       })
     })
     describe("2シャンテン", () => {

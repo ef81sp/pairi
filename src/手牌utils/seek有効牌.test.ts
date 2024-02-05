@@ -69,7 +69,9 @@ describe("seek有効牌5ブロック", () => {
       )
       const result = seek有効牌5ブロック(extractResult5ブロック, 1)
       test("暗刻で使われている牌でももう1枚残っているので、フォロー牌のくっつきに含まれる", () => {
-        expect(result).toEqual(generate牌ListForTest(["1p", "2p", "3p", "4p", "5p", "6p", "7p", "8p"]))
+        expect(result).toEqual(
+          generate牌ListForTest(["1p", "2p", "3p", "4p", "5p", "6p", "7p", "8p"]),
+        )
       })
     })
   })
