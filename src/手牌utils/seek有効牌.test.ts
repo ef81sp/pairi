@@ -4,7 +4,7 @@ import {
   generate牌ListForTest,
 } from "../utils/testUtils"
 import { seek有効牌5ブロック, seek有効牌七対子 } from "./seek有効牌.mjs"
-import { ExtractResult5ブロック, ExtractResult七対子 } from "./手牌utils.type.mjs"
+import type { ExtractResult5ブロック, ExtractResult七対子 } from "./手牌utils.type.mjs"
 
 describe("seek有効牌5ブロック", () => {
   describe("ノーテン", () => {

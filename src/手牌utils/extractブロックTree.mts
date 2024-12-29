@@ -1,9 +1,9 @@
 import { extractSingleブロック } from "./extractSingleブロック.mjs"
 import {
-  IntermediateExtractResult,
-  IntermediateExtractTree,
-  TブロックType,
-  T手牌Suit別,
+  type IntermediateExtractResult,
+  type IntermediateExtractTree,
+  type TブロックType,
+  type T手牌Suit別,
   T面子,
 } from "./手牌utils.type.mjs"
 

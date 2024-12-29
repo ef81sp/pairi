@@ -1,4 +1,4 @@
-import { 牌 } from "../../牌.mjs"
+import type { 牌 } from "../../牌.mjs"
 
 export const sort牌List = (target: 牌[]): 牌[] => {
   return target.sort((a, b) => {

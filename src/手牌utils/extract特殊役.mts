@@ -2,9 +2,9 @@ import { generate手牌Suit別ForTest } from "../utils/utils.mjs"
 import { extract対子Tree, flatTrees } from "./extractブロックTree.mjs"
 import {
   ExtractResult5ブロック,
-  ExtractResult七対子,
-  ExtractResult国士無双,
-  T手牌Suit別,
+  type ExtractResult七対子,
+  type ExtractResult国士無双,
+  type T手牌Suit別,
 } from "./手牌utils.type.mjs"
 
 export const extract七対子 = (手牌: T手牌Suit別): ExtractResult七対子 => {

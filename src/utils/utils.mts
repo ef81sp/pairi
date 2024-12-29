@@ -1,5 +1,5 @@
 import { 牌 } from "../牌.mjs"
-import { Str牌 } from "./types.mjs"
+import type { Str牌 } from "./types.mjs"
 
 export const shuffle = (array: unknown[]) => {
   for (let i = array.length - 1; i > 0; i--) {
