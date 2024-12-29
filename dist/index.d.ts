@@ -102,6 +102,7 @@ declare class 手牌 {
     protected analysisResult13: AnalysisResult13 | null;
     protected analysisResult14: analysisResult14 | null;
     constructor(普通: T手牌普通, 副露?: T手牌副露);
+    constructor(普通: string);
     protected sort(): void;
     protected マンズ(): 牌[];
     protected ピンズ(): 牌[];
