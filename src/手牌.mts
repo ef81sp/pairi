@@ -1,9 +1,9 @@
-import { Str牌 } from "./utils/types.mjs"
-import { 副露 } from "./副露.mjs"
-import { AnalysisResult13, analyze13 } from "./手牌utils/analyze手牌.mjs"
+import type { Str牌 } from "./utils/types.mjs"
+import type { 副露 } from "./副露.mjs"
+import { type AnalysisResult13, analyze13 } from "./手牌utils/analyze手牌.mjs"
 import { sort牌List, unique牌List } from "./手牌utils/utils/format牌List.mjs"
-import { T手牌Suit別 } from "./手牌utils/手牌utils.type.mjs"
-import { 牌 } from "./牌.mjs"
+import type { T手牌Suit別 } from "./手牌utils/手牌utils.type.mjs"
+import { isStr牌, 牌 } from "./牌.mjs"
 
 export type T手牌普通 =
   | [牌]
@@ -47,8 +47,39 @@ export class 手牌 {
    * @param 普通 The normal 牌s in the hand.
    * @param 副露 The melded 牌s in the hand.
    */
-  constructor(普通: T手牌普通, 副露?: T手牌副露) {
-    this.普通 = 普通
+  constructor(普通: T手牌普通, 副露?: T手牌副露)
+  constructor(普通: string)
+
+  constructor(普通: T手牌普通 | string, 副露?: T手牌副露) {
+    if (typeof 普通 === "string") {
+      if (!/^[1-9mpsz]+$/.test(普通)) throw new Error("手牌の文字列が不正です")
+      if (!/[0-9]/.test(普通)) throw new Error("手牌の文字列が不正です")
+
+      // 例) "1236m456p789s123z"
+      const mpsz = 普通.match(/\d+[mpsz]/g) // [ '1236m', '456p', '789s', '123z' ]
+      if (!mpsz) throw new Error("手牌の文字列が不正です")
+
+      const _普通 = []
+      for (const suit of mpsz) {
+        const suitChar = suit.slice(-1)
+        if (!(suitChar === "z" || suitChar === "m" || suitChar === "p" || suitChar === "s")) {
+          throw new Error("手牌の文字列が不正です")
+        }
+        const number = suit.slice(0, -1)
+        for (const n of number) {
+          const paiStr = `${n}${suitChar}`
+          if (!isStr牌(paiStr)) throw new Error("手牌の文字列が不正です")
+
+          _普通.push(new 牌(paiStr))
+        }
+      }
+
+      if (!isT手牌普通(_普通)) throw new Error("手牌の文字列が不正です")
+
+      this.普通 = _普通
+    } else {
+      this.普通 = 普通
+    }
     if (副露) {
       this.副露 = 副露
     }

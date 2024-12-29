@@ -1,7 +1,7 @@
 import { generate牌ListForTest } from "./utils/testUtils"
 import { shuffle } from "./utils/utils.mjs"
 import { 副露 } from "./副露.mjs"
-import { T手牌普通, isT手牌普通, 手牌 } from "./手牌.mjs"
+import { type T手牌普通, isT手牌普通, 手牌 } from "./手牌.mjs"
 import { 牌 } from "./牌.mjs"
 
 describe("手牌", () => {
@@ -41,6 +41,26 @@ describe("手牌", () => {
   })
   test("文字列化できる", () => {
     expect(t.toString普通()).toBe("1m2m5m6m7m2p6p8p3s5s9s6z7z")
+  })
+})
+describe("文字列による初期化", () => {
+  const t = new 手牌("1236m456p789s123z")
+  test("生成できる", () => {
+    expect(t.普通).toEqual([
+      new 牌("1m"),
+      new 牌("2m"),
+      new 牌("3m"),
+      new 牌("6m"),
+      new 牌("4p"),
+      new 牌("5p"),
+      new 牌("6p"),
+      new 牌("7s"),
+      new 牌("8s"),
+      new 牌("9s"),
+      new 牌("1z"),
+      new 牌("2z"),
+      new 牌("3z"),
+    ])
   })
 })
 describe("手牌解析13", () => {
