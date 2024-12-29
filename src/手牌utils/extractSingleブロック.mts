@@ -1,15 +1,15 @@
-import { Suit } from "../utils/types.mjs"
+import type { Suit } from "../utils/types.mjs"
 import { isStr牌, 牌 } from "../牌.mjs"
 import {
-  Result単体抽出,
-  Result単体抽出Success,
+  type Result単体抽出,
+  type Result単体抽出Success,
   Tブロック,
-  TブロックType,
-  T塔子,
-  T対子,
-  T手牌Suit別,
-  T雀頭,
-  T面子,
+  type TブロックType,
+  type T塔子,
+  type T対子,
+  type T手牌Suit別,
+  type T雀頭,
+  type T面子,
 } from "./手牌utils.type.mjs"
 
 // 用語: 順塔子とは、 両面・辺張・嵌張 のこと。一般名称がないので……

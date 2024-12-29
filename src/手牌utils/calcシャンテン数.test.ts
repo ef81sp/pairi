@@ -1,6 +1,6 @@
 import { generateExtractResult七対子ForTest } from "../utils/testUtils"
 import { calcシャンテン数七対子 } from "./calcシャンテン数.mjs"
-import { ExtractResult七対子 } from "./手牌utils.type.mjs"
+import type { ExtractResult七対子 } from "./手牌utils.type.mjs"
 
 describe("calcシャンテン数七対子", () => {
   describe("かぶりなしの場合", () => {

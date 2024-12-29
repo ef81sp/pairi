@@ -1,5 +1,5 @@
-import { Suit } from "../utils/types.mjs"
-import { 牌 } from "../牌.mjs"
+import type { Suit } from "../utils/types.mjs"
+import type { 牌 } from "../牌.mjs"
 
 export type Result単体抽出<T extends TブロックType> =
   | Result単体抽出Success<T>

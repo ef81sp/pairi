@@ -1,4 +1,4 @@
-import { 牌 } from "./牌.mjs"
+import type { 牌 } from "./牌.mjs"
 
 type T宣言 = "ポン" | "チー" | "大明槓" | "加槓" | "暗槓"
 type T誰から = "上家" | "対面" | "下家"

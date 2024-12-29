@@ -1,7 +1,7 @@
-import { 牌 } from "../牌.mjs"
+import type { 牌 } from "../牌.mjs"
 import { calcシャンテン数5ブロック } from "./calcシャンテン数.mjs"
 import { extract塔子Tree, extract面子Tree, flatTrees } from "./extractブロックTree.mjs"
-import { ExtractResult5ブロック, T手牌Suit別 } from "./手牌utils.type.mjs"
+import type { ExtractResult5ブロック, T手牌Suit別 } from "./手牌utils.type.mjs"
 
 export const extractPriority面子 = (手牌: T手牌Suit別): ExtractResult5ブロック[] => {
   const results: ExtractResult5ブロック[] = []

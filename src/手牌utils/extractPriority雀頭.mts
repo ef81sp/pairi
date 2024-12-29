@@ -2,7 +2,7 @@ import { 牌 } from "../牌.mjs"
 import { calcシャンテン数5ブロック } from "./calcシャンテン数.mjs"
 import { extractSingleブロック } from "./extractSingleブロック.mjs"
 import { extract塔子Tree, extract面子Tree, flatTrees } from "./extractブロックTree.mjs"
-import {
+import type {
   ExtractResult5ブロック,
   IntermediateExtractResult,
   Result単体抽出,

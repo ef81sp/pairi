@@ -1,4 +1,4 @@
-import { Number字牌, Number数牌, Str牌, Suit, Suit字牌, Suit数牌 } from "./utils/types.mjs"
+import type { Number字牌, Number数牌, Str牌, Suit, Suit字牌, Suit数牌 } from "./utils/types.mjs"
 
 /**
  * Represents a 牌 (Mahjong tile).

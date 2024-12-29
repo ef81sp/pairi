@@ -1,6 +1,6 @@
-import { ExtractResult5ブロック, ExtractResult七対子 } from "../手牌utils/手牌utils.type.mjs"
+import type { ExtractResult5ブロック, ExtractResult七対子 } from "../手牌utils/手牌utils.type.mjs"
 import { 牌 } from "../牌.mjs"
-import { Str牌 } from "./types.mjs"
+import type { Str牌 } from "./types.mjs"
 
 type Rest = {
   [key in "m" | "p" | "s" | "z"]: Str牌[]

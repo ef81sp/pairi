@@ -1,5 +1,5 @@
-import { Str牌 } from "../utils/types.mjs"
-import { 牌 } from "../牌.mjs"
+import type { Str牌 } from "../utils/types.mjs"
+import type { 牌 } from "../牌.mjs"
 import {
   calcシャンテン数5ブロック,
   calcシャンテン数七対子,
@@ -11,7 +11,7 @@ import { extract七対子, extract国士無双 } from "./extract特殊役.mjs"
 import { seek有効牌5ブロック, seek有効牌七対子, seek有効牌国士無双 } from "./seek有効牌.mjs"
 import { countRemaining牌num } from "./utils/countRemaining牌.mjs"
 import { unique牌List } from "./utils/format牌List.mjs"
-import { ExtractResult5ブロック, T手牌Suit別 } from "./手牌utils.type.mjs"
+import type { ExtractResult5ブロック, T手牌Suit別 } from "./手牌utils.type.mjs"
 
 const analyze手牌13Memo = new Map<string, AnalysisResult手牌13>()
 const addToMap = (key: string, value: AnalysisResult手牌13) => {

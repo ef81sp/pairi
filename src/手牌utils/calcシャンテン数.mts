@@ -2,7 +2,7 @@ import { flattenRest } from "./seek有効牌.mjs"
 import { countRequiredブロックnum } from "./utils/countRequiredブロックnum.mjs"
 import { count牌 } from "./utils/count牌.mjs"
 import { is暗刻 } from "./utils/is暗刻.mjs"
-import {
+import type {
   ExtractResult5ブロック,
   ExtractResult七対子,
   ExtractResult国士無双,
